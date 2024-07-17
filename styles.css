@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  animation: scale-up 0.4s ease-in-out;
+}
+.home-content {
+  background-color: thistle;
+}
+.about-content {
+  background-color: lightblue;
+}
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+a {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+@keyframes scale-up {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
